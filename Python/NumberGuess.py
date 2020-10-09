@@ -1,7 +1,11 @@
 import random
+import time
+
 n=random. randint(0,50)
 print("I am thinking of a number 0-50. Write a number. I will say higher or lower. You have 5 guesses.")
+
 g=int(input())
+
 if g>n:
     print("Lower")
 if g<n:
@@ -11,6 +15,7 @@ if g==n:
       exit()
       
 h=int(input())
+
 if h>n:
     print("Lower")
 if h<n:
@@ -52,3 +57,4 @@ if i==n:
     print("Congratulations, you win!")
 if i>n or i<n:
     print("Sorry, the answer is "+str(n)+".")
+time.sleep(5)
